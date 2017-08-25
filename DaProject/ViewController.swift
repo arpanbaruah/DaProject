@@ -3,7 +3,7 @@
 //  DaProject
 //
 //  Created by ARPAN BARUAH on 8/25/17.
-//  Copyright © 2017 ARPAN BARUAH. All rights reserved..
+//  Copyright © 2017 ARPAN BARUAH. All rights reserved...
 //
 
 import UIKit
