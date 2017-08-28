@@ -21,30 +21,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jumon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4db-tj-izf">
-                                <rect key="frame" x="161.5" y="40" width="52" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KN-7B-kvh">
-                                <rect key="frame" x="157.5" y="80" width="60" height="30"/>
+                                <rect key="frame" x="157.5" y="60.5" width="60" height="30"/>
                                 <state key="normal" title="Push Me"/>
                                 <connections>
                                     <action selector="daButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DzE-35-ho7"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hdn-WF-dnK">
+                                <rect key="frame" x="137" y="100.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="DKr-uu-opJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r5L-0g-r0H">
+                                <rect key="frame" x="137.5" y="140.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="mqs-MD-jUf"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jumon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4db-tj-izf">
+                                <rect key="frame" x="161" y="30" width="52" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="3KN-7B-kvh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BDB-JM-Fai"/>
-                            <constraint firstItem="4db-tj-izf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bvj-eS-C6u"/>
-                            <constraint firstItem="4db-tj-izf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="NPu-yN-RRK"/>
-                            <constraint firstItem="3KN-7B-kvh" firstAttribute="top" secondItem="4db-tj-izf" secondAttribute="bottom" constant="19" id="Pbb-ZW-x6O"/>
+                            <constraint firstItem="4db-tj-izf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4XO-Lc-Sgv"/>
+                            <constraint firstItem="r5L-0g-r0H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7VG-mf-hbV"/>
+                            <constraint firstItem="hdn-WF-dnK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CT0-13-VGg"/>
+                            <constraint firstItem="r5L-0g-r0H" firstAttribute="top" secondItem="hdn-WF-dnK" secondAttribute="bottom" constant="10" id="THG-nl-uUT"/>
+                            <constraint firstItem="4db-tj-izf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="TuY-sD-qp6"/>
+                            <constraint firstItem="hdn-WF-dnK" firstAttribute="top" secondItem="3KN-7B-kvh" secondAttribute="bottom" constant="10" id="bkR-hf-Qvn"/>
+                            <constraint firstItem="3KN-7B-kvh" firstAttribute="top" secondItem="4db-tj-izf" secondAttribute="bottom" constant="10" id="lZp-gc-MfQ"/>
+                            <constraint firstItem="3KN-7B-kvh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="naA-g1-cKe"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="daLabel" destination="4db-tj-izf" id="xey-1q-7UB"/>
+                        <outlet property="text1" destination="hdn-WF-dnK" id="upV-BP-zlM"/>
+                        <outlet property="text2" destination="r5L-0g-r0H" id="Z0c-TF-XEA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
